@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="AssetComments" EntityType="ApplicationDataStore.AssetComment" store:Type="Tables" Schema="dbo" Table="AssetComments" />
+    <EntitySet Name="AssetMaintenanceActivities" EntityType="ApplicationDataStore.AssetMaintenanceActivity" store:Type="Tables" Schema="dbo" Table="AssetMaintenanceActivities" />
+    <EntitySet Name="AssetMaintenanceSchedules" EntityType="ApplicationDataStore.AssetMaintenanceSchedule" store:Type="Tables" Schema="dbo" Table="AssetMaintenanceSchedules" />
+    <EntitySet Name="AssetMaintenanceTypes" EntityType="ApplicationDataStore.AssetMaintenanceType" store:Type="Tables" Schema="dbo" Table="AssetMaintenanceTypes" />
+    <EntitySet Name="AssetManufacturers" EntityType="ApplicationDataStore.AssetManufacturer" store:Type="Tables" Schema="dbo" Table="AssetManufacturers" />
+    <EntitySet Name="Assets" EntityType="ApplicationDataStore.Asset" store:Type="Tables" Schema="dbo" Table="Assets" />
+    <EntitySet Name="AssetServiceContracts" EntityType="ApplicationDataStore.AssetServiceContract" store:Type="Tables" Schema="dbo" Table="AssetServiceContracts" />
+    <EntitySet Name="AssetSubscribers" EntityType="ApplicationDataStore.AssetSubscriber" store:Type="Tables" Schema="dbo" Table="AssetSubscribers" />
+    <EntitySet Name="AssetSuppliers" EntityType="ApplicationDataStore.AssetSupplier" store:Type="Tables" Schema="dbo" Table="AssetSuppliers" />
+    <EntitySet Name="AssetTypes" EntityType="ApplicationDataStore.AssetType" store:Type="Tables" Schema="dbo" Table="AssetTypes" />
+    <EntitySet Name="Employees" EntityType="ApplicationDataStore.Employee" store:Type="Tables" Schema="dbo" Table="Employees" />
+    <EntitySet Name="ServiceContracts" EntityType="ApplicationDataStore.ServiceContract" store:Type="Tables" Schema="dbo" Table="ServiceContracts" />
+    <EntitySet Name="ServiceContractSuppliers" EntityType="ApplicationDataStore.ServiceContractSupplier" store:Type="Tables" Schema="dbo" Table="ServiceContractSuppliers" />
+    <AssociationSet Name="AssetMaintenanceActivity_AssetMaintenanceType" Association="ApplicationDataStore.AssetMaintenanceActivity_AssetMaintenanceType">
+      <End Role="AssetMaintenanceType" EntitySet="AssetMaintenanceTypes" />
+      <End Role="AssetMaintenanceActivity" EntitySet="AssetMaintenanceActivities" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceSchedule_AssetMaintenanceType" Association="ApplicationDataStore.AssetMaintenanceSchedule_AssetMaintenanceType">
+      <End Role="AssetMaintenanceType" EntitySet="AssetMaintenanceTypes" />
+      <End Role="AssetMaintenanceSchedule" EntitySet="AssetMaintenanceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="AssetManufacturer_Asset" Association="ApplicationDataStore.AssetManufacturer_Asset">
+      <End Role="AssetManufacturer" EntitySet="AssetManufacturers" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetComment_Asset" Association="ApplicationDataStore.AssetComment_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetComment" EntitySet="AssetComments" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceActivity_Asset" Association="ApplicationDataStore.AssetMaintenanceActivity_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetMaintenanceActivity" EntitySet="AssetMaintenanceActivities" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceSchedule_Asset" Association="ApplicationDataStore.AssetMaintenanceSchedule_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetMaintenanceSchedule" EntitySet="AssetMaintenanceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="AssetServiceContract_Asset" Association="ApplicationDataStore.AssetServiceContract_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetServiceContract" EntitySet="AssetServiceContracts" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSubscriber_Asset" Association="ApplicationDataStore.AssetSubscriber_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetSubscriber" EntitySet="AssetSubscribers" />
+    </AssociationSet>
+    <AssociationSet Name="AssetType_Asset" Association="ApplicationDataStore.AssetType_Asset">
+      <End Role="AssetType" EntitySet="AssetTypes" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSupplier_Asset" Association="ApplicationDataStore.AssetSupplier_Asset">
+      <End Role="AssetSupplier" EntitySet="AssetSuppliers" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSubscriber_Employee" Association="ApplicationDataStore.AssetSubscriber_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="AssetSubscriber" EntitySet="AssetSubscribers" />
+    </AssociationSet>
+    <AssociationSet Name="AssetServiceContract_ServiceContract" Association="ApplicationDataStore.AssetServiceContract_ServiceContract">
+      <End Role="ServiceContract" EntitySet="ServiceContracts" />
+      <End Role="AssetServiceContract" EntitySet="AssetServiceContracts" />
+    </AssociationSet>
+    <AssociationSet Name="ServiceContract_ServiceContractSupplier" Association="ApplicationDataStore.ServiceContract_ServiceContractSupplier">
+      <End Role="ServiceContractSupplier" EntitySet="ServiceContractSuppliers" />
+      <End Role="ServiceContract" EntitySet="ServiceContracts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AssetComment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CommentDate" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetComment_Asset" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DateDue" Type="datetime" Nullable="false" />
+    <Property Name="DateCompleted" Type="datetime" />
+    <Property Name="Outcome" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetMaintenanceActivity_AssetMaintenanceType" Type="int" Nullable="false" />
+    <Property Name="AssetMaintenanceActivity_Asset" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaintenanceTypeIntervalInMonths" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetMaintenanceSchedule_AssetMaintenanceType" Type="int" Nullable="false" />
+    <Property Name="AssetMaintenanceSchedule_Asset" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaintenanceTypeDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="InUse" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AssetManufacturer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Manufacturer" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine4" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine5" Type="nvarchar" MaxLength="100" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Website" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Asset">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Reference" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="AssetDescription" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="SerialNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" />
+    <Property Name="Location" Type="nvarchar" MaxLength="255" />
+    <Property Name="PurchaseDate" Type="datetime" />
+    <Property Name="CommissionDate" Type="datetime" />
+    <Property Name="IntendedReplacementDate" Type="datetime" />
+    <Property Name="InUse" Type="bit" Nullable="false" />
+    <Property Name="DateRemovedFromUse" Type="datetime" />
+    <Property Name="AssetImage" Type="varbinary(max)" />
+    <Property Name="CapitalAssetReference" Type="nvarchar" MaxLength="50" />
+    <Property Name="PurchasePrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentValue" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateCurrentValueEvaluated" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetManufacturer_Asset" Type="int" />
+    <Property Name="AssetType_Asset" Type="int" Nullable="false" />
+    <Property Name="AssetSupplier_Asset" Type="int" />
+  </EntityType>
+  <EntityType Name="AssetServiceContract">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetServiceContract_Asset" Type="int" />
+    <Property Name="AssetServiceContract_ServiceContract" Type="int" />
+  </EntityType>
+  <EntityType Name="AssetSubscriber">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AssetSubscriber_Asset" Type="int" Nullable="false" />
+    <Property Name="AssetSubscriber_Employee" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AssetSupplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine4" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine5" Type="nvarchar" MaxLength="100" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Website" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AssetType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AssetTypeDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="InUse" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="75" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="75" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="75">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Current" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ServiceContract">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ContractReference" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ContractName" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="ContractDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="ContractPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentContract" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="ServiceContract_ServiceContractSupplier" Type="int" />
+  </EntityType>
+  <EntityType Name="ServiceContractSupplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceContractSupplierDetails" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="255" />
+    <Property Name="ContactJobDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="255" />
+    <Property Name="Website" Type="nvarchar" MaxLength="255" />
+    <Property Name="AddressLine1" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine3" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine4" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddressLine5" Type="nvarchar" MaxLength="100" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="15" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <Association Name="AssetMaintenanceActivity_AssetMaintenanceType">
+    <End Role="AssetMaintenanceType" Type="ApplicationDataStore.AssetMaintenanceType" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="AssetMaintenanceActivity" Type="ApplicationDataStore.AssetMaintenanceActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetMaintenanceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceActivity">
+        <PropertyRef Name="AssetMaintenanceActivity_AssetMaintenanceType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceSchedule_AssetMaintenanceType">
+    <End Role="AssetMaintenanceType" Type="ApplicationDataStore.AssetMaintenanceType" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="AssetMaintenanceSchedule" Type="ApplicationDataStore.AssetMaintenanceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetMaintenanceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceSchedule">
+        <PropertyRef Name="AssetMaintenanceSchedule_AssetMaintenanceType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetManufacturer_Asset">
+    <End Role="AssetManufacturer" Type="ApplicationDataStore.AssetManufacturer" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetManufacturer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetManufacturer_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetComment_Asset">
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetComment" Type="ApplicationDataStore.AssetComment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetComment">
+        <PropertyRef Name="AssetComment_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceActivity_Asset">
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetMaintenanceActivity" Type="ApplicationDataStore.AssetMaintenanceActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceActivity">
+        <PropertyRef Name="AssetMaintenanceActivity_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceSchedule_Asset">
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetMaintenanceSchedule" Type="ApplicationDataStore.AssetMaintenanceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceSchedule">
+        <PropertyRef Name="AssetMaintenanceSchedule_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetServiceContract_Asset">
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetServiceContract" Type="ApplicationDataStore.AssetServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetServiceContract">
+        <PropertyRef Name="AssetServiceContract_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSubscriber_Asset">
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="AssetSubscriber" Type="ApplicationDataStore.AssetSubscriber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetSubscriber">
+        <PropertyRef Name="AssetSubscriber_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetType_Asset">
+    <End Role="AssetType" Type="ApplicationDataStore.AssetType" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetType_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSupplier_Asset">
+    <End Role="AssetSupplier" Type="ApplicationDataStore.AssetSupplier" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Asset" Type="ApplicationDataStore.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetSupplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetSupplier_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSubscriber_Employee">
+    <End Role="Employee" Type="ApplicationDataStore.Employee" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="AssetSubscriber" Type="ApplicationDataStore.AssetSubscriber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetSubscriber">
+        <PropertyRef Name="AssetSubscriber_Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetServiceContract_ServiceContract">
+    <End Role="ServiceContract" Type="ApplicationDataStore.ServiceContract" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="AssetServiceContract" Type="ApplicationDataStore.AssetServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceContract">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetServiceContract">
+        <PropertyRef Name="AssetServiceContract_ServiceContract" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ServiceContract_ServiceContractSupplier">
+    <End Role="ServiceContractSupplier" Type="ApplicationDataStore.ServiceContractSupplier" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ServiceContract" Type="ApplicationDataStore.ServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceContractSupplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceContract">
+        <PropertyRef Name="ServiceContract_ServiceContractSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

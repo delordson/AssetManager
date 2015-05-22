@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceApplication
+  Name="LightSwitchServiceApplication" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication.Attributes>
+    <Partial />
+  </ServiceApplication.Attributes>
+  <EntityType
+    Name="Asset">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="Reference"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AssetDescription"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="100" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="SerialNumber"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Model"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Location"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PurchaseDate"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CommissionDate"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="IntendedReplacementDate"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="InUse"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DateRemovedFromUse"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="AssetImage"
+        PropertyType="Microsoft.LightSwitch.Extensions:Image?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CapitalAssetReference"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="50" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PurchasePrice"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CurrentValue"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DateCurrentValueEvaluated"
+        PropertyType=":Date?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="AssetComments"
+        Association="AssetComment_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetComment" />
+      <NavigationProperty
+        Name="AssetMaintenanceActivities"
+        Association="AssetMaintenanceActivity_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetMaintenanceActivity" />
+      <NavigationProperty
+        Name="AssetMaintenanceSchedules"
+        Association="AssetMaintenanceSchedule_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetMaintenanceSchedule" />
+      <NavigationProperty
+        Name="AssetManufacturer"
+        Association="AssetManufacturer_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetManufacturer" />
+      <NavigationProperty
+        Name="AssetServiceContracts"
+        Association="AssetServiceContract_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetServiceContract" />
+      <NavigationProperty
+        Name="AssetSubscribers"
+        Association="AssetSubscriber_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetSubscriber" />
+      <NavigationProperty
+        Name="AssetSupplier"
+        Association="AssetSupplier_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetSupplier" />
+      <NavigationProperty
+        Name="AssetType"
+        Association="AssetType_Asset"
+        FromEnd="Asset"
+        ToEnd="AssetType" />
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityContainer
+    Name="ApplicationData">
+    <EntityContainer.Attributes>
+      <Partial />
+    </EntityContainer.Attributes>
+    <EntitySet
+      Name="Assets"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="Asset" />
+    <QueryOperation
+      Name="Assets_Single"
+      ReturnType="Asset">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Assets" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="Assets_SingleOrDefault"
+      ReturnType="Asset">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.FilterExpression>
+        <QueryFilterExpressionTree>
+          <BinaryExpression
+            NodeType="Equal">
+            <BinaryExpression.Left>
+              <ChainExpression>
+                <MemberExpression
+                  Member="Id" />
+              </ChainExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <ParameterExpression
+                Parameter="Id" />
+            </BinaryExpression.Right>
+          </BinaryExpression>
+        </QueryFilterExpressionTree>
+      </QueryOperation.FilterExpression>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Assets" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="AssetComment_Assets"
+      Association="AssetComment_Asset">
+      <AssociationSetEnd
+        Name="AssetComment"
+        EntitySet="AssetComments" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet
+      Name="AssetMaintenanceActivity_Assets"
+      Association="AssetMaintenanceActivity_Asset">
+      <AssociationSetEnd
+        Name="AssetMaintenanceActivity"
+        EntitySet="AssetMaintenanceActivities" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet
+      Name="AssetMaintenanceSchedule_Assets"
+      Association="AssetMaintenanceSchedule_Asset">
+      <AssociationSetEnd
+        Name="AssetMaintenanceSchedule"
+        EntitySet="AssetMaintenanceSchedules" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet
+      Name="AssetServiceContract_Assets"
+      Association="AssetServiceContract_Asset">
+      <AssociationSetEnd
+        Name="AssetServiceContract"
+        EntitySet="AssetServiceContracts" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet
+      Name="AssetSubscriber_Assets"
+      Association="AssetSubscriber_Asset">
+      <AssociationSetEnd
+        Name="AssetSubscriber"
+        EntitySet="AssetSubscribers" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet
+      Name="AssetType_Assets"
+      Association="AssetType_Asset">
+      <AssociationSetEnd
+        Name="AssetType"
+        EntitySet="AssetTypes" />
+      <AssociationSetEnd
+        Name="Asset"
+        EntitySet="Assets" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association
+    Name="AssetComment_Asset">
+    <AssociationEnd
+      Name="AssetComment"
+      Multiplicity="Many"
+      EntityType="AssetComment" />
+    <AssociationEnd
+      Name="Asset"
+      Multiplicity="One"
+      EntityType="Asset">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Cascade" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <DataService
+    Name="ApplicationDataMapping">
+    <DataService.Attributes>
+      <Partial />
+    </DataService.Attributes>
+    <AssociationSetMapping
+      AssociationSet="AssetComment_Assets">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="AssetComment_Assets" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetComment_Assets]/Members[AssetComment]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AssetComment_Asset" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetComment_Assets]/Members[Asset]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="AssetMaintenanceActivity_Assets">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="AssetMaintenanceActivity_Assets" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetMaintenanceActivity_Assets]/Members[AssetMaintenanceActivity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AssetMaintenanceActivity_Asset" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetMaintenanceActivity_Assets]/Members[Asset]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="AssetMaintenanceSchedule_Assets">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="AssetMaintenanceSchedule_Assets" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetMaintenanceSchedule_Assets]/Members[AssetMaintenanceSchedule]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AssetMaintenanceSchedule_Asset" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetMaintenanceSchedule_Assets]/Members[Asset]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Assets">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="AssetManufacturer_Asset"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="AssetSupplier_Asset"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="AssetType_Asset"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="AssetServiceContract_Assets">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="AssetServiceContract_Assets" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetServiceContract_Assets]/Members[AssetServiceContract]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AssetServiceContract_Asset" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetServiceContract_Assets]/Members[Asset]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="AssetSubscriber_Assets">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="AssetSubscriber_Assets" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetSubscriber_Assets]/Members[AssetSubscriber]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="AssetSubscriber_Asset" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[AssetSubscriber_Assets]/Members[Asset]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+  <Association
+    Name="AssetMaintenanceActivity_Asset">
+    <AssociationEnd
+      Name="AssetMaintenanceActivity"
+      Multiplicity="Many"
+      EntityType="AssetMaintenanceActivity" />
+    <AssociationEnd
+      Name="Asset"
+      Multiplicity="One"
+      EntityType="Asset">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Cascade" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="AssetMaintenanceSchedule_Asset">
+    <AssociationEnd
+      Name="AssetMaintenanceSchedule"
+      Multiplicity="Many"
+      EntityType="AssetMaintenanceSchedule" />
+    <AssociationEnd
+      Name="Asset"
+      Multiplicity="One"
+      EntityType="Asset">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Cascade" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="AssetServiceContract_Asset">
+    <AssociationEnd
+      Name="AssetServiceContract"
+      Multiplicity="Many"
+      EntityType="AssetServiceContract" />
+    <AssociationEnd
+      Name="Asset"
+      EntityType="Asset">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Cascade" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="AssetSubscriber_Asset">
+    <AssociationEnd
+      Name="AssetSubscriber"
+      Multiplicity="Many"
+      EntityType="AssetSubscriber" />
+    <AssociationEnd
+      Name="Asset"
+      Multiplicity="One"
+      EntityType="Asset">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+</ServiceApplication>

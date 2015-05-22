@@ -1,0 +1,189 @@
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.pdb
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AppManifest.xaml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.xap
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\XapCache.tmp
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Edm.SL.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Services.Client.SL.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Base.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.Internal.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Cosmopolitan.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Design.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ManifestService.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Model.Xaml.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.RuntimeEditor.Internal.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.SDKProxy.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.OData.SL.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Spatial.SL.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.xml
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.csprojResolveAssemblyReference.cache
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\documents\visual studio 2013\Projects\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.pdb
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.pdb
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AppManifest.xaml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.xap
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\XapCache.tmp
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Edm.SL.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Services.Client.SL.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Base.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.Internal.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Cosmopolitan.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Design.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ManifestService.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Model.Xaml.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.RuntimeEditor.Internal.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.SDKProxy.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.OData.SL.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Spatial.SL.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.xml
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.csprojResolveAssemblyReference.cache
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.pdb
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.pdb
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AppManifest.xaml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\AssetManagerApp.DesktopClient.xap
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\XapCache.tmp
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Edm.SL.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.Services.Client.SL.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Base.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.Internal.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Cosmopolitan.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Extensions.Design.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.ManifestService.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Model.Xaml.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.RuntimeEditor.Internal.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.SDKProxy.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.Data.OData.SL.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Spatial.SL.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.LightSwitch.Client.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.Composition.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Extensions.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.PollingDuplex.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.Web.Extensions.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Input.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Controls.DomainServices.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Windows.Data.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Linq.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\Microsoft.CSharp.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Bin\Debug\System.Xml.Serialization.xml
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.csprojResolveAssemblyReference.cache
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.dll
+C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\obj\Debug\AssetManagerApp.DesktopClient.pdb

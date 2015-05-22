@@ -1,0 +1,120 @@
+﻿#msls-id-app-loading .ui-icon-loading {
+    background-image: url(Images/msls-loader-dark.gif) !important;
+}
+
+#msls-id-progress-overlay .msls-progress {
+    background: url(Images/msls-loader-dark.gif) no-repeat bottom !important;
+}
+
+.ui-btn-inner {
+    border-top: none;
+}
+
+.ui-btn {
+    font-weight: normal;
+}
+
+.msls-header, 
+.msls-footer {
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+    .msls-header .ui-shadow,
+    .msls-footer .ui-shadow {
+        -moz-box-shadow: 0px 0px 0 transparent;
+        -webkit-box-shadow: 0px 0px 0 transparent;
+        box-shadow: 0px 0px 0 transparent;
+    }
+
+.msls-header {
+    border-top: none;
+}
+
+.msls-header.ui-bar-a,
+.msls-header.ui-bar-b,
+.msls-header.ui-bar-c,
+.msls-header.ui-bar-d,
+.msls-header.ui-bar-e {
+    background: inherit;
+}
+
+.msls-large-icon .ui-icon,
+.msls-large-icon .ui-icon-searchfield:after {
+    background-image: url(images/msls-white-icons-36.png)!important;
+}
+
+.msls-large-icon.ui-btn-hover-a .ui-icon {
+    background-color: #3e81af !important;
+}
+
+.msls-footer .ui-btn .ui-btn-inner {
+    text-shadow: none;
+}
+
+.ui-body-a .ui-disabled .ui-link {
+    color: #d9d9d9 !important;
+}
+
+input.msls-read-only, .msls-read-only.ui-select .ui-btn, textarea.msls-read-only {
+    background-color: transparent;
+    border-color: #595959;
+}
+
+.msls-presenter.msls-loading > :not(.msls-presenter) > .msls-state-overlay,
+.msls-presenter.msls-loading > .msls-state-overlay {
+    background-image: url(Images/msls-loader-light.gif);
+}
+
+.msls-display-error-icon {
+    background-image: url(images/msls-white-icons-18.png);
+}
+
+.msls-list-loading {
+    background-image: url(Images/msls-loader-light.gif);
+}
+
+.ui-focus,
+.ui-btn:focus {
+    -moz-box-shadow: inset 0px 0px 1px #2EB5EF, 0px 0px 0px #2EB5EF;
+    -webkit-box-shadow: inset 0px 0px 1px #2EB5EF, 0px 0px 0px #2EB5EF;
+    box-shadow: inset 0px 0px 0px 1px #2EB5EF, 0px 0px 0px #2EB5EF;
+}
+
+.ui-input-text.ui-focus,
+.ui-input-search.ui-focus {
+    -moz-box-shadow: inset 0px 0px 0px 1px #2EB5EF;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #2EB5EF;
+    box-shadow: inset 0px 0px 0px 1px #2EB5EF;
+}
+
+.ui-bar-a .ui-shadow:focus,
+.ui-bar-b .ui-shadow:focus,
+.ui-bar-c .ui-shadow:focus,
+.ui-bar-d .ui-shadow:focus,
+.ui-bar-e .ui-shadow:focus {
+    -moz-box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+    -webkit-box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+    box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+}
+
+.msls-screen-tab .ui-btn:focus {
+    -moz-box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+    -webkit-box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+    box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
+}
+
+.ui-bar-a .ui-link,
+.ui-bar-b .ui-link,
+.ui-bar-c .ui-link,
+.ui-bar-d .ui-link,
+.ui-bar-e .ui-link,
+.ui-body-a .ui-link,
+.ui-body-b .ui-link,
+.ui-body-c .ui-link,
+.ui-body-d .ui-link,
+.ui-body-e .ui-link {
+    font-weight: normal;
+    text-decoration: none;
+}

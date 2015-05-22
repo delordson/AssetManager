@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="AssetComment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CommentDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Comment" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="AssetComment_Asset" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetComment_Asset" ToRole="Asset" FromRole="AssetComment" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateDue" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="DateCompleted" Type="Edm.DateTime" />
+    <Property Name="Outcome" Type="Edm.String" MaxLength="250" />
+    <Property Name="AssetMaintenanceActivity_Asset" Type="Edm.Int32" Nullable="false" />
+    <Property Name="AssetMaintenanceActivity_AssetMaintenanceType" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetMaintenanceActivity_Asset" ToRole="Asset" FromRole="AssetMaintenanceActivity" />
+    <NavigationProperty Name="AssetMaintenanceType" Relationship="LightSwitchApplication.AssetMaintenanceActivity_AssetMaintenanceType" ToRole="AssetMaintenanceType" FromRole="AssetMaintenanceActivity" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaintenanceTypeIntervalInMonths" Type="Edm.Int32" Nullable="false" />
+    <Property Name="AssetMaintenanceSchedule_Asset" Type="Edm.Int32" Nullable="false" />
+    <Property Name="AssetMaintenanceSchedule_AssetMaintenanceType" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetMaintenanceSchedule_Asset" ToRole="Asset" FromRole="AssetMaintenanceSchedule" />
+    <NavigationProperty Name="AssetMaintenanceType" Relationship="LightSwitchApplication.AssetMaintenanceSchedule_AssetMaintenanceType" ToRole="AssetMaintenanceType" FromRole="AssetMaintenanceSchedule" />
+  </EntityType>
+  <EntityType Name="AssetMaintenanceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaintenanceTypeDescription" Type="Edm.String" Nullable="false" MaxLength="50" />
+    <Property Name="InUse" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="AssetMaintenanceActivities" Relationship="LightSwitchApplication.AssetMaintenanceActivity_AssetMaintenanceType" ToRole="AssetMaintenanceActivity" FromRole="AssetMaintenanceType" />
+    <NavigationProperty Name="AssetMaintenanceSchedules" Relationship="LightSwitchApplication.AssetMaintenanceSchedule_AssetMaintenanceType" ToRole="AssetMaintenanceSchedule" FromRole="AssetMaintenanceType" />
+  </EntityType>
+  <EntityType Name="AssetManufacturer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Manufacturer" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="AddressLine1" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine2" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine3" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine4" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine5" Type="Edm.String" MaxLength="100" />
+    <Property Name="PostCode" Type="Edm.String" MaxLength="15" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone1" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone2" Type="Edm.String" MaxLength="255" />
+    <Property Name="Fax" Type="Edm.String" MaxLength="255" />
+    <Property Name="Website" Type="Edm.String" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Assets" Relationship="LightSwitchApplication.AssetManufacturer_Asset" ToRole="Asset" FromRole="AssetManufacturer" />
+  </EntityType>
+  <EntityType Name="Asset">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Reference" Type="Edm.String" Nullable="false" MaxLength="50" />
+    <Property Name="AssetDescription" Type="Edm.String" Nullable="false" MaxLength="100" />
+    <Property Name="SerialNumber" Type="Edm.String" MaxLength="50" />
+    <Property Name="Model" Type="Edm.String" MaxLength="50" />
+    <Property Name="Location" Type="Edm.String" MaxLength="255" />
+    <Property Name="PurchaseDate" Type="Edm.DateTime" />
+    <Property Name="CommissionDate" Type="Edm.DateTime" />
+    <Property Name="IntendedReplacementDate" Type="Edm.DateTime" />
+    <Property Name="InUse" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="DateRemovedFromUse" Type="Edm.DateTime" />
+    <Property Name="AssetImage" Type="Edm.Binary" MaxLength="Max" />
+    <Property Name="CapitalAssetReference" Type="Edm.String" MaxLength="50" />
+    <Property Name="PurchasePrice" Type="Edm.Decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentValue" Type="Edm.Decimal" Precision="18" Scale="2" />
+    <Property Name="DateCurrentValueEvaluated" Type="Edm.DateTime" />
+    <Property Name="AssetManufacturer_Asset" Type="Edm.Int32" />
+    <Property Name="AssetSupplier_Asset" Type="Edm.Int32" />
+    <Property Name="AssetType_Asset" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="AssetComments" Relationship="LightSwitchApplication.AssetComment_Asset" ToRole="AssetComment" FromRole="Asset" />
+    <NavigationProperty Name="AssetMaintenanceActivities" Relationship="LightSwitchApplication.AssetMaintenanceActivity_Asset" ToRole="AssetMaintenanceActivity" FromRole="Asset" />
+    <NavigationProperty Name="AssetMaintenanceSchedules" Relationship="LightSwitchApplication.AssetMaintenanceSchedule_Asset" ToRole="AssetMaintenanceSchedule" FromRole="Asset" />
+    <NavigationProperty Name="AssetManufacturer" Relationship="LightSwitchApplication.AssetManufacturer_Asset" ToRole="AssetManufacturer" FromRole="Asset" />
+    <NavigationProperty Name="AssetServiceContracts" Relationship="LightSwitchApplication.AssetServiceContract_Asset" ToRole="AssetServiceContract" FromRole="Asset" />
+    <NavigationProperty Name="AssetSubscribers" Relationship="LightSwitchApplication.AssetSubscriber_Asset" ToRole="AssetSubscriber" FromRole="Asset" />
+    <NavigationProperty Name="AssetSupplier" Relationship="LightSwitchApplication.AssetSupplier_Asset" ToRole="AssetSupplier" FromRole="Asset" />
+    <NavigationProperty Name="AssetType" Relationship="LightSwitchApplication.AssetType_Asset" ToRole="AssetType" FromRole="Asset" />
+  </EntityType>
+  <EntityType Name="AssetServiceContract">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssetServiceContract_Asset" Type="Edm.Int32" />
+    <Property Name="AssetServiceContract_ServiceContract" Type="Edm.Int32" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetServiceContract_Asset" ToRole="Asset" FromRole="AssetServiceContract" />
+    <NavigationProperty Name="ServiceContract" Relationship="LightSwitchApplication.AssetServiceContract_ServiceContract" ToRole="ServiceContract" FromRole="AssetServiceContract" />
+  </EntityType>
+  <EntityType Name="AssetSubscriber">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssetSubscriber_Asset" Type="Edm.Int32" Nullable="false" />
+    <Property Name="AssetSubscriber_Employee" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetSubscriber_Asset" ToRole="Asset" FromRole="AssetSubscriber" />
+    <NavigationProperty Name="Employee" Relationship="LightSwitchApplication.AssetSubscriber_Employee" ToRole="Employee" FromRole="AssetSubscriber" />
+  </EntityType>
+  <EntityType Name="AssetSupplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier" Type="Edm.String" Nullable="false" MaxLength="100" />
+    <Property Name="AddressLine1" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine2" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine3" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine4" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine5" Type="Edm.String" MaxLength="100" />
+    <Property Name="PostCode" Type="Edm.String" MaxLength="15" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone1" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone2" Type="Edm.String" MaxLength="255" />
+    <Property Name="Fax" Type="Edm.String" MaxLength="255" />
+    <Property Name="Website" Type="Edm.String" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Assets" Relationship="LightSwitchApplication.AssetSupplier_Asset" ToRole="Asset" FromRole="AssetSupplier" />
+  </EntityType>
+  <EntityType Name="AssetType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AssetTypeDescription" Type="Edm.String" Nullable="false" MaxLength="50" />
+    <Property Name="InUse" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Asset" Relationship="LightSwitchApplication.AssetType_Asset" ToRole="Asset" FromRole="AssetType" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="75" />
+    <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="75" />
+    <Property Name="UserName" Type="Edm.String" Nullable="false" MaxLength="75" />
+    <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Current" Type="Edm.Boolean" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="AssetSubscribers" Relationship="LightSwitchApplication.AssetSubscriber_Employee" ToRole="AssetSubscriber" FromRole="Employee" />
+  </EntityType>
+  <EntityType Name="ServiceContract">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContractReference" Type="Edm.String" Nullable="false" MaxLength="50" />
+    <Property Name="ContractName" Type="Edm.String" Nullable="false" MaxLength="250" />
+    <Property Name="ContractDescription" Type="Edm.String" MaxLength="500" />
+    <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="ContractPrice" Type="Edm.Decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentContract" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="ServiceContract_ServiceContractSupplier" Type="Edm.Int32" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="AssetServiceContracts" Relationship="LightSwitchApplication.AssetServiceContract_ServiceContract" ToRole="AssetServiceContract" FromRole="ServiceContract" />
+    <NavigationProperty Name="ServiceContractSupplier" Relationship="LightSwitchApplication.ServiceContract_ServiceContractSupplier" ToRole="ServiceContractSupplier" FromRole="ServiceContract" />
+  </EntityType>
+  <EntityType Name="ServiceContractSupplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceContractSupplierDetails" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Contact" Type="Edm.String" MaxLength="255" />
+    <Property Name="ContactJobDescription" Type="Edm.String" MaxLength="255" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone1" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone2" Type="Edm.String" MaxLength="255" />
+    <Property Name="Fax" Type="Edm.String" MaxLength="255" />
+    <Property Name="Website" Type="Edm.String" MaxLength="255" />
+    <Property Name="AddressLine1" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine2" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine3" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine4" Type="Edm.String" MaxLength="100" />
+    <Property Name="AddressLine5" Type="Edm.String" MaxLength="100" />
+    <Property Name="PostCode" Type="Edm.String" MaxLength="15" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="ServiceContracts" Relationship="LightSwitchApplication.ServiceContract_ServiceContractSupplier" ToRole="ServiceContract" FromRole="ServiceContractSupplier" />
+  </EntityType>
+  <Association Name="AssetMaintenanceActivity_AssetMaintenanceType">
+    <End Role="AssetMaintenanceType" Type="LightSwitchApplication.AssetMaintenanceType" Multiplicity="1" />
+    <End Role="AssetMaintenanceActivity" Type="LightSwitchApplication.AssetMaintenanceActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetMaintenanceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceActivity">
+        <PropertyRef Name="AssetMaintenanceActivity_AssetMaintenanceType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceSchedule_AssetMaintenanceType">
+    <End Role="AssetMaintenanceType" Type="LightSwitchApplication.AssetMaintenanceType" Multiplicity="1" />
+    <End Role="AssetMaintenanceSchedule" Type="LightSwitchApplication.AssetMaintenanceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetMaintenanceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceSchedule">
+        <PropertyRef Name="AssetMaintenanceSchedule_AssetMaintenanceType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetManufacturer_Asset">
+    <End Role="AssetManufacturer" Type="LightSwitchApplication.AssetManufacturer" Multiplicity="0..1" />
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetManufacturer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetManufacturer_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetComment_Asset">
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetComment" Type="LightSwitchApplication.AssetComment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetComment">
+        <PropertyRef Name="AssetComment_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceActivity_Asset">
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetMaintenanceActivity" Type="LightSwitchApplication.AssetMaintenanceActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceActivity">
+        <PropertyRef Name="AssetMaintenanceActivity_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetMaintenanceSchedule_Asset">
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetMaintenanceSchedule" Type="LightSwitchApplication.AssetMaintenanceSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetMaintenanceSchedule">
+        <PropertyRef Name="AssetMaintenanceSchedule_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetServiceContract_Asset">
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AssetServiceContract" Type="LightSwitchApplication.AssetServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetServiceContract">
+        <PropertyRef Name="AssetServiceContract_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSubscriber_Asset">
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="1" />
+    <End Role="AssetSubscriber" Type="LightSwitchApplication.AssetSubscriber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetSubscriber">
+        <PropertyRef Name="AssetSubscriber_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetType_Asset">
+    <End Role="AssetType" Type="LightSwitchApplication.AssetType" Multiplicity="1" />
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetType_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSupplier_Asset">
+    <End Role="AssetSupplier" Type="LightSwitchApplication.AssetSupplier" Multiplicity="0..1" />
+    <End Role="Asset" Type="LightSwitchApplication.Asset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AssetSupplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asset">
+        <PropertyRef Name="AssetSupplier_Asset" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetSubscriber_Employee">
+    <End Role="Employee" Type="LightSwitchApplication.Employee" Multiplicity="1" />
+    <End Role="AssetSubscriber" Type="LightSwitchApplication.AssetSubscriber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetSubscriber">
+        <PropertyRef Name="AssetSubscriber_Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AssetServiceContract_ServiceContract">
+    <End Role="ServiceContract" Type="LightSwitchApplication.ServiceContract" Multiplicity="0..1" />
+    <End Role="AssetServiceContract" Type="LightSwitchApplication.AssetServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceContract">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssetServiceContract">
+        <PropertyRef Name="AssetServiceContract_ServiceContract" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ServiceContract_ServiceContractSupplier">
+    <End Role="ServiceContractSupplier" Type="LightSwitchApplication.ServiceContractSupplier" Multiplicity="0..1" />
+    <End Role="ServiceContract" Type="LightSwitchApplication.ServiceContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceContractSupplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceContract">
+        <PropertyRef Name="ServiceContract_ServiceContractSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApplicationData" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="AssetComments" EntityType="LightSwitchApplication.AssetComment" />
+    <EntitySet Name="AssetMaintenanceActivities" EntityType="LightSwitchApplication.AssetMaintenanceActivity" />
+    <EntitySet Name="AssetMaintenanceSchedules" EntityType="LightSwitchApplication.AssetMaintenanceSchedule" />
+    <EntitySet Name="AssetMaintenanceTypes" EntityType="LightSwitchApplication.AssetMaintenanceType" />
+    <EntitySet Name="AssetManufacturers" EntityType="LightSwitchApplication.AssetManufacturer" />
+    <EntitySet Name="Assets" EntityType="LightSwitchApplication.Asset" />
+    <EntitySet Name="AssetServiceContracts" EntityType="LightSwitchApplication.AssetServiceContract" />
+    <EntitySet Name="AssetSubscribers" EntityType="LightSwitchApplication.AssetSubscriber" />
+    <EntitySet Name="AssetSuppliers" EntityType="LightSwitchApplication.AssetSupplier" />
+    <EntitySet Name="AssetTypes" EntityType="LightSwitchApplication.AssetType" />
+    <EntitySet Name="Employees" EntityType="LightSwitchApplication.Employee" />
+    <EntitySet Name="ServiceContracts" EntityType="LightSwitchApplication.ServiceContract" />
+    <EntitySet Name="ServiceContractSuppliers" EntityType="LightSwitchApplication.ServiceContractSupplier" />
+    <AssociationSet Name="AssetMaintenanceActivity_AssetMaintenanceType" Association="LightSwitchApplication.AssetMaintenanceActivity_AssetMaintenanceType">
+      <End Role="AssetMaintenanceType" EntitySet="AssetMaintenanceTypes" />
+      <End Role="AssetMaintenanceActivity" EntitySet="AssetMaintenanceActivities" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceSchedule_AssetMaintenanceType" Association="LightSwitchApplication.AssetMaintenanceSchedule_AssetMaintenanceType">
+      <End Role="AssetMaintenanceType" EntitySet="AssetMaintenanceTypes" />
+      <End Role="AssetMaintenanceSchedule" EntitySet="AssetMaintenanceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="AssetManufacturer_Asset" Association="LightSwitchApplication.AssetManufacturer_Asset">
+      <End Role="AssetManufacturer" EntitySet="AssetManufacturers" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetComment_Asset" Association="LightSwitchApplication.AssetComment_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetComment" EntitySet="AssetComments" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceActivity_Asset" Association="LightSwitchApplication.AssetMaintenanceActivity_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetMaintenanceActivity" EntitySet="AssetMaintenanceActivities" />
+    </AssociationSet>
+    <AssociationSet Name="AssetMaintenanceSchedule_Asset" Association="LightSwitchApplication.AssetMaintenanceSchedule_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetMaintenanceSchedule" EntitySet="AssetMaintenanceSchedules" />
+    </AssociationSet>
+    <AssociationSet Name="AssetServiceContract_Asset" Association="LightSwitchApplication.AssetServiceContract_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetServiceContract" EntitySet="AssetServiceContracts" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSubscriber_Asset" Association="LightSwitchApplication.AssetSubscriber_Asset">
+      <End Role="Asset" EntitySet="Assets" />
+      <End Role="AssetSubscriber" EntitySet="AssetSubscribers" />
+    </AssociationSet>
+    <AssociationSet Name="AssetType_Asset" Association="LightSwitchApplication.AssetType_Asset">
+      <End Role="AssetType" EntitySet="AssetTypes" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSupplier_Asset" Association="LightSwitchApplication.AssetSupplier_Asset">
+      <End Role="AssetSupplier" EntitySet="AssetSuppliers" />
+      <End Role="Asset" EntitySet="Assets" />
+    </AssociationSet>
+    <AssociationSet Name="AssetSubscriber_Employee" Association="LightSwitchApplication.AssetSubscriber_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="AssetSubscriber" EntitySet="AssetSubscribers" />
+    </AssociationSet>
+    <AssociationSet Name="AssetServiceContract_ServiceContract" Association="LightSwitchApplication.AssetServiceContract_ServiceContract">
+      <End Role="ServiceContract" EntitySet="ServiceContracts" />
+      <End Role="AssetServiceContract" EntitySet="AssetServiceContracts" />
+    </AssociationSet>
+    <AssociationSet Name="ServiceContract_ServiceContractSupplier" Association="LightSwitchApplication.ServiceContract_ServiceContractSupplier">
+      <End Role="ServiceContractSupplier" EntitySet="ServiceContractSuppliers" />
+      <End Role="ServiceContract" EntitySet="ServiceContracts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

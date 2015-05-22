@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+  Version="1.0.0.0"
+  DefaultNavigationItem="!module/NavigationItems[Tasks]"
+  Shell="Microsoft.LightSwitch.Cosmopolitan:CosmopolitanShell"
+  Theme="Microsoft.LightSwitch.Cosmopolitan:CosmopolitanTheme"
+  TargetPlatform="RichClient"
+  Name="LightSwitchApplication.AssetManagerApp.DesktopClient" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <Application.NavigationItems>
+    <ApplicationNavigationGroup
+      Name="Tasks">
+      <ApplicationNavigationGroup.Attributes>
+        <DisplayName
+          Value="Tasks" />
+      </ApplicationNavigationGroup.Attributes>
+    </ApplicationNavigationGroup>
+    <ApplicationNavigationGroup
+      Name="Administration">
+      <ApplicationNavigationGroup.Attributes>
+        <DisplayName
+          Value="Administration" />
+      </ApplicationNavigationGroup.Attributes>
+      <ApplicationNavigationLink
+        Command="Microsoft.LightSwitch.Security:!module/Commands[ScreenCommandShowRolesScreen]"
+        Name="RolesScreen" />
+      <ApplicationNavigationLink
+        Command="Microsoft.LightSwitch.Security:!module/Commands[ScreenCommandShowUsersScreen]"
+        Name="UsersScreen" />
+    </ApplicationNavigationGroup>
+  </Application.NavigationItems>
+  <Application.Attributes>
+    <ModuleNamespace
+      Namespace="LightSwitchApplication" />
+    <Partial
+      IsPrimary="True" />
+  </Application.Attributes>
+  <EntityContainerGroup
+    Name="DataWorkspace">
+    <EntityContainerGroupProperty
+      EntityContainer="Microsoft.LightSwitch.Security:SecurityData"
+      Name="SecurityData">
+      <EntityContainerGroupProperty.Attributes>
+        <Generated />
+        <DisplayName
+          Value="Security Data" />
+        <Description
+          Value="Service that provides access to security-related data." />
+      </EntityContainerGroupProperty.Attributes>
+    </EntityContainerGroupProperty>
+    <EntityContainerGroupProperty
+      EntityContainer="ApplicationData"
+      Name="ApplicationData" />
+  </EntityContainerGroup>
+  <Permission
+    Name="CanEditAssetComments">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetComments" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetMaintenanceActivities">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetMaintenanceActivities" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetMaintenanceSchedules">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetMaintenanceSchedules" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetMaintenanceTypes">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetMaintenanceTypes" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetManufacturers">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetManufacturers" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssets">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssets" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetServiceContracts">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetServiceContracts" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetSubscribers">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetSubscribers" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetSuppliers">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetSuppliers" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditAssetTypes">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditAssetTypes" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditEmployees">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditEmployees" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditServiceContracts">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditServiceContracts" />
+    </Permission.Attributes>
+  </Permission>
+  <Permission
+    Name="CanEditServiceContractSuppliers">
+    <Permission.Attributes>
+      <Proxy
+        Target="ServiceInterface:CanEditServiceContractSuppliers" />
+    </Permission.Attributes>
+  </Permission>
+  <GlobalAttributeGroup
+    Name="LightSwitchServiceApplicationGroup">
+    <GlobalAttributeGroup.Attributes>
+      <Proxy
+        Target="ServiceInterface:LightSwitchServiceApplicationGroup" />
+    </GlobalAttributeGroup.Attributes>
+  </GlobalAttributeGroup>
+</Application>

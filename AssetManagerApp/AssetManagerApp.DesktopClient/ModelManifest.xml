@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Properties\Client.lsml" Checksum="E55A7464CFD57A6520A3260871EEB7B6E4E6F05725622CBEB0F8651141BB73BB" />
+    <Document FullPath="C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.DesktopClient\Properties\Proxies.lsml" Checksum="23B61FA75EEDDDCE9E21FE9C4F81CE276B7B8C1284D2B9906F60B11BBF622567" />
+  </Documents>
+</ModelDocumentManifest>

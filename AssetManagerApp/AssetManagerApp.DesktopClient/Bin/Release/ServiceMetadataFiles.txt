@@ -1,0 +1,15 @@
+AssetManagerApp.Server.Properties.Service.lsml
+AssetManagerApp.Server.Properties.DataSources.ApplicationData.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetTypes.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetComments.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetMaintenanceActivities.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetMaintenanceSchedules.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetMaintenanceTypes.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetManufacturers.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.Assets.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetServiceContracts.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetSubscribers.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.AssetSuppliers.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.Employees.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.ServiceContracts.lsml
+AssetManagerApp.Server.DataSources.ApplicationData.ServiceContractSuppliers.lsml
