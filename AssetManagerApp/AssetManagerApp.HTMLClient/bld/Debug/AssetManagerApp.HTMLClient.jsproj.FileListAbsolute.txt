@@ -4,3 +4,5 @@ C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerA
 C:\Users\Delordson\Documents\Visual Studio 2013\Projects\BitBucket\AssetManagerApp\AssetManagerApp\AssetManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
 C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
 C:\Users\Delordson\Downloads\LightSwitchExtras\assetmanagerapp\AssetManagerApp\AssetManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Delordson\Documents\GitHub\AssetManager\AssetManagerApp\AssetManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Delordson\Documents\GitHub\AssetManager\AssetManagerApp\AssetManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
